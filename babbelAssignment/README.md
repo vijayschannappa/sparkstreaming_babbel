@@ -22,7 +22,12 @@ Why AWS Keyspace (Cassandra)?
 AWS Keyspace can be readily integrated with spark structured streaming and supports update mode which is a requirement in the project. It is also higly scalable as Amazon Keyspaces automatic scaling can increase read capacity or write capacity as often as necessary, in accordance with our scaling policy policy attached to the service in terraform script. Additionally, unlike DynamoDB which is native to AWS, AWS Keyspace is just a managed Cassandra and so it's near to cloud agnostic policy.
 
 # How to run the Project?
-If you want to test the project locally, the install kafka and spark in your local system. Please start the Kafka zookeeper and broker. The run the python based producer 'python_producer.py' which produces messages to the mentioned topic - babbel. Then run the spark streaming script and print the outptu in console to see the processed data. the stream trigger frequency and state retention period can be adjusted as per our requirements.
+If you want to test the project locally, install kafka and spark in your local system. Please start the Kafka zookeeper and broker. Then run the python based kafka producer 'python_producer.py' which produces messages to the mentioned topic - babbel. Then run the spark streaming script and print the output in console to see the processed data. the stream trigger frequency and state retention period can be adjusted as per our requirements.
+Additionally you can run unit tests that are under 'tests' folder to verify input and output.
+
+
+
+
 
 
 
